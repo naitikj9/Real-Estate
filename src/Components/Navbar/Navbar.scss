@@ -1,0 +1,120 @@
+@import"../../responsive.scss";
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+    a {
+        transition: all 0.5s ease;
+
+        @include small {
+            display: none;
+        }
+
+        &:hover {
+            scale: 1.2;
+        }
+    }
+
+
+
+    .left {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 28px;
+
+            }
+        }
+
+        span {
+            @include medium {
+                display: none;
+            }
+
+            @include small {
+                display: initial;
+            }
+
+        }
+
+    }
+
+    .right {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: rgb(189, 171, 138);
+        height: 100%;
+
+
+        @include medium {
+            background-color: transparent;
+        }
+
+        a {
+            padding: 10px 20px;
+            margin: 20px
+        }
+
+        .sign {
+            background-color: rgb(236, 37, 37);
+
+        }
+
+        .menu_icon {
+            display: none;
+            z-index: 3;
+
+            @include small {
+                display: initial;
+
+
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+
+            }
+
+        }
+
+        .menu_items {
+            position: absolute;
+            top: 0;
+            right: -50%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 50%;
+            transition: all 0.5s ease-in;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+
+            &.active {
+                right: 0;
+            }
+        }
+
+    }
+
+}
