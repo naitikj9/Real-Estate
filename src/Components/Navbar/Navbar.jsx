@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "./Navbar.scss"
+import "./NavBar.scss"
 
 function NavBar(){
 

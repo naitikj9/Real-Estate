@@ -7,12 +7,16 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    
     @include large{
         background-color: white;
         max-width: 1280px;
+        }
         
 
-    }
+    // Remove the extra closing curly brace
     @include medium{
         background-color:rgb(253, 194, 160) ;
         max-width: 768px;
@@ -22,6 +26,13 @@
         background-color: rgb(244, 229, 153);
         max-width: 640px;
       
+    }
+
+    .Homepage{
+        background-color: white;
+        flex: 1;
+        
+
     }
 
 }
