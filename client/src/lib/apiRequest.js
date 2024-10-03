@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "http://localhost:8800/api",
+  baseURL: "real-estate-1-h6b2.onrender.com/api",
   withCredentials: true,
 });
 
